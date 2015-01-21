@@ -1,0 +1,29 @@
+#*
+Check out [TODO] for available properties
+*#
+
+#set( $H = '#' )
+
+
+<a href="Free Applications"><IMG width="25%" src="https://raw.githubusercontent.com/wiki/nesi/applications/freesoftware.jpg"></a>
+<a href="Compilers"><IMG width="25%" src="https://raw.githubusercontent.com/wiki/nesi/applications/compilers.jpg"></a>
+<a href="Libraries"><IMG width="25%" src="https://raw.githubusercontent.com/wiki/nesi/applications/libraries.jpg"></a>
+
+ * [Back to the Pan User Documentation](https://wiki.auckland.ac.nz/x/CA-sAg)
+
+$H$H$H$H Top applications
+
+#foreach ($app in $applications)#set( $doc = $applications[$app].doc )#set( $application_name = $application[$app].name)#set ($application = $applications[$app].name)#if( $doc.has_tag('top_app'))* [$application](wiki/${application})
+#end#end
+
+
+$H$H$H$H All software (alphabetically)
+
+#set ($AZ = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"])
+#foreach ($char in $AZ)
+
+$H$H$H$H$H $char.upper()
+
+#foreach ($app in $applications)#set( $doc = $applications[$app] )#set ($application_name = $applications[$app].name)#if ($application_name.lower().startswith($char))* [$application_name](wiki/${application_name})
+#end#end
+#end
