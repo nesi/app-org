@@ -1,4 +1,4 @@
-* Application organization tools
+# Application organization tools
 
 This repository contains tools and scripts to manage our application repository.
 
