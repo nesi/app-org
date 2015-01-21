@@ -362,7 +362,7 @@ class Documentation(object):
 
     def has_tag(self, tag):
 
-        return has_tag(self.application.tags, tag)
+        return has_tag(self.tags, tag)
 
 # --------------------------------------------------------------------------------------
 # Click cli stuff

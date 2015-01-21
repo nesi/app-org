@@ -4,7 +4,7 @@ This repository contains tools and scripts to manage our application repository.
 
 ** Application repository structure
 
-For now, check out: https://wiki.auckland.ac.nz/display/CERES/Application+repository
+Check out the wiki: https://github.com/nesi/app-org/wiki
 
 ** app-org.py
 
@@ -14,8 +14,8 @@ More info ( for old, java based application: https://wiki.auckland.ac.nz/pages/v
 
 *** Requirements
 
- - pip install click
- - pip install --pre airspeed
+    pip install click
+    pip install --pre airspeed
 
 *** Installing
 
@@ -24,8 +24,5 @@ More info ( for old, java based application: https://wiki.auckland.ac.nz/pages/v
 
 *** Running
 
-    app-org.py --help
+    app-org --help
 
-*** Notes
-
-job.properties (can have tags & versions)
